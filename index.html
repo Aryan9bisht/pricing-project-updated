@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Pricing component</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+  <div class="head-div">
+    <div class="heading">
+      <h1 class="heading-main">OUR PRICING</h1>
+    </div>
+    <div class="forSwitch">
+      <div class="plans">
+        <h1>Monthly</h1>
+      </div>
+      <div>
+        <input type="checkbox" name="checkbox" id="toggle" />
+        <label for="toggle" class="switch"></label>
+      </div>
+      <div class="plans">
+        <h1>Annually</h1>
+      </div>
+    </div>
+    <div class="pricing">
+      <div class="first">
+        <div class="Basic">Basic</div>
+        <div class="prices" style="padding-bottom:30px; border-bottom: 1px solid black;">&dollar;<span id="upPrice">19.99</span></div>
+        <div class="spaces" style="padding-bottom:30px; border-bottom: 1px solid black;">500 GB</div>
+        <div class="conditions" style="padding-bottom:30px; border-bottom: 0.5px solid black;">Storage 2 Users Allowed</div>
+        <div class="datalimit" style="padding-bottom:30px;">Send up to 3 GB</div>
+        <div class="learn" style="padding-bottom:30px;"><button class="button-learn">Learn More</button></div>
+      </div>
+      <div class="second">
+        <div class="Professional" style="padding-bottom:30px;">Professional</div>
+        <div class="Proffesional-prices">&dollar;<span id="price2">24.99</span></div>
+        <div class="spaces" style="padding-bottom:30px; border-bottom: 1px solid white;">1 TB</div>
+        <div class="conditions" style="padding-bottom:30px; border-bottom: 1px solid white;">Storage 5 Users Allowed</div>
+        <div class="datalimit" style="padding-bottom:30px;">Send up to 10 GB</div>
+        <div class="learn" style="padding-bottom:30px;"><button class="main-button">Learn More</button></div>
+      </div>
+      <div class="third">
+        <div class="Master">Master</div>
+        <div class="prices" style="padding-bottom:30px; border-bottom: 1px solid black;">&dollar;<span id="price3">39.99</span></div>
+        <div class="spaces" style="padding-bottom:30px; border-bottom: 1px solid black;">2 TB</div>
+        <div class="conditions" style="padding-bottom:30px; border-bottom: 1px solid black;">Storage 5 Users Allowed</div>
+        <div class="datalimit" style="padding-bottom:30px;">Send up to 20 GB</div>
+        <div class="learn" style="padding-bottom:30px;"><button class="button-learn">Learn More</button></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    let checkedBox = document.getElementById("toggle");
+    var priceElement = document.getElementById("upPrice");
+    var priceElement2 = document.getElementById("price2");
+    var priceElement3 = document.getElementById("price3");
+    var checkbox = document.getElementById("toggle");
+    checkbox.addEventListener("change", function () {
+      if (checkbox.checked) {
+        priceElement.textContent = "199.99";
+        priceElement2.textContent = "299.99";
+        priceElement3.textContent = "399.99";
+      } else {
+        priceElement.textContent = "19.99";
+        priceElement2.textContent = "29.99";
+        priceElement3.textContent = "39.99";
+      }
+    });
+  </script>
+</body>
+</html>
