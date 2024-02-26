@@ -187,11 +187,12 @@ input[type="checkbox"] {
     padding-bottom: 30px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 475px) {
     .pricing {
         flex-direction: column;
         height: auto;
-        width: 100%;
+        width: fit-content;
+        display: flex;
         margin-top: 10%;
         padding: 20px;
         box-shadow: none;
@@ -203,8 +204,10 @@ input[type="checkbox"] {
     .second,
     .third {
         margin-top: 20px;
+        margin-left: 75px;
         height: auto;
         width: 100%;
+        justify-content: center;
     }
 
     .Basic {
