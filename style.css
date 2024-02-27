@@ -191,7 +191,7 @@ input[type="checkbox"] {
     .pricing {
         flex-direction: column;
         height: auto;
-        width: fit-content;
+        width: auto;
         display: flex;
         margin-top: 10%;
         padding: 20px;
@@ -204,9 +204,9 @@ input[type="checkbox"] {
     .second,
     .third {
         margin-top: 20px;
-        margin-left: 75px;
+       
         height: auto;
-        width: 100%;
+        width: auto;
         justify-content: center;
     }
 
@@ -224,5 +224,8 @@ input[type="checkbox"] {
 
     .toggleSwitch {
         margin-top: -10px;
+    }
+    .plans{
+        font-size: x-small;
     }
 }
