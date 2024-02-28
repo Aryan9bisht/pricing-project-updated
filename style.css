@@ -125,7 +125,7 @@ input[type="checkbox"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(237, 63%, 64%);
+    background: linear-gradient(to right, rgb(159, 162, 240), rgb(108, 112, 222));
     color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px rgb(178, 178, 236);
@@ -209,7 +209,7 @@ hr{
 }
 
 .main-button:hover {
-    background-color:  hsl(237, 62%, 60%);
+    background: linear-gradient(to right, rgb(159, 162, 240), rgb(108, 112, 222));
     color: white;
     width: 270px;
     border: 1px solid white;
