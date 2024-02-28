@@ -157,7 +157,7 @@ input[type="checkbox"] {
 }
 
 .Master {
-    margin-top: 55px;
+    margin-top: 60px;
  
 }
 
@@ -178,7 +178,7 @@ hr{
    
 }
 .button-learn {
-    background: linear-gradient(to right, rgb(159, 162, 240), rgb(108, 112, 222));
+    background: hsl(237, 63%, 64%) ;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -189,8 +189,8 @@ hr{
 }
 
 .button-learn:hover {
- 
- 
+ color:hsl(237, 63%, 64%) ;
+ background-color: white;
  border: 1px solid hsl(237, 63%, 64%);
  border-radius: 5px ;
     width: 270px;
