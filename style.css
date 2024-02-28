@@ -14,7 +14,7 @@ body {
 
 .heading-main {
     text-align: center;
-    color: gray;
+    color: hsl(232, 13%, 33%) ;
     font-size: xx-large;
 }
 
