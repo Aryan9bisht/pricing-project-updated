@@ -120,7 +120,7 @@ input[type="checkbox"] {
 .second {
     margin-top: 150px;
     height: 530px;
-    width: 300px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
